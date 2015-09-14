@@ -1,0 +1,32 @@
+<html><head>
+<meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+<title></title>
+<link type="text/css" rel="stylesheet" href="css/app.css">
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/controller.js"></script>
+<script type="text/javascript" src="scripts/util.js"></script>
+<script type="text/javascript" src="scripts/filesystem.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="cordova_plugins.js"></script>
+<script type="text/javascript">
+	document.addEventListener( "DOMContentLoaded", function(){
+		document.addEventListener("deviceready", imageEncryptor.init, false);
+	}, false );
+</script>
+</head>
+<body>
+<div class="toolbar toolbar-top">
+	<div class="btn" data-action="beginBrowseForFiles">Start Browsing</div>
+	<div class="toolbar-title">File Browser</div>
+	<div class="btn" data-action="directoryUp">Up</div>
+</div>
+<div id="body">
+
+<br><br><br>Tap the "start browsing" button...
+
+</div>
+<div class="toolbar toolbar-bottom">
+	<div id="folderName">file paths will appear here</div>
+</div>
+</body>
+</html>
